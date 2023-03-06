@@ -39,13 +39,13 @@
             /* padding: 15px 32px; */
             text-decoration: none;
             height: 25px;
-            width: 100%;
+            width: 80%;
             font-size: 100%;
             border-color: black;
             border-radius: 8px;
         }
         .text{
-            width: 100%;
+            width: 80%;
             height: 20px;
             border-radius: 8px;
             border-color: black;
@@ -56,6 +56,11 @@
         }
         .butt:hover{
             cursor: pointer;
+        }
+        textarea{
+            width: 80%;
+            border-color: black;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -76,9 +81,9 @@
             </label>
             <label for="recommendation">
                 <h3>Would you reccomend Herald College Kathmandu to a friend?</h3>
-                <input type="radio" class="reccomend">Yes<br>
-                <input type="radio" class="reccomend">No <br>
-                <input type="radio" class="reccomend">Maybe <br>
+                <input type="radio" class="reccomend" name="recommend">Yes<br>
+                <input type="radio" class="reccomend" name="recommend">No <br>
+                <input type="radio" class="reccomend" name="recommend">Maybe <br>
             </label>
             <label>
                 <h3>Languages and Frameworks known(Check all that apply)</h3>
@@ -95,7 +100,7 @@
             </label>
             <label>
                 <h3>Any comments or suggestions</h3>
-                <textarea name="Comments" id="comments" cols="60" rows="10"></textarea>
+                <textarea name="Comments" id="comments" rows="10"></textarea>
             </label><br>
             <input type="submit" class="butt">
         </form>
