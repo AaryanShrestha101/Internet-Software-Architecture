@@ -1,0 +1,208 @@
+body{
+    background-color:  #121212;
+    background-image: url(background.jpg);
+}
+.contianer{
+    
+}
+.right-side{
+    flex: 30%;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    margin: 40px;
+}
+.top_bar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-side{
+    flex: 60%;
+}
+.top_bar .right-side button{
+    background:none;
+    border:none;
+    color: white;
+}
+.top_bar .right-side button:hover{
+    cursor: pointer;
+}
+.logo{
+    width: 150px;
+}
+.search{
+    padding: 5px;
+    width: 50%;
+    margin-left: 10% ;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.heading{
+    color: paleturquoise;
+
+}
+span{
+    color: gold;
+}
+p{
+    font-size: 24px;
+    color:#fff;
+}
+.butt{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.butt:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+.contact_me{
+    display: flex;
+    margin-top: 100px;
+    background-color: palegoldenrod;
+    border-radius: 8px ;
+    width: 50%;
+    margin-left: 25%;
+}
+.side1{
+    flex: 50%;
+    margin-left:10% ;
+}
+.side2{
+    flex: 50%;
+    margin-left: 10%;
+}
+.con{
+    color: #000;
+}
+.text{
+    width: 80%;
+    height: 20px;
+    border-radius: 8px;
+    border-color: black;
+}
+#txtarea{
+    border-radius: 8px;
+    border-color: black;
+    width: 80%;
+}
+.send{
+    background-color:brown;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.send:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #121212;
+}
+.sociallink{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 30px;
+}
+.sociallink:hover{
+    color:crimson;
+}
+.side1 i{
+    font-size: 24px;
+}
+.side1 p{
+    color: #000;
+    font-size: 18px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 1px 0px;
+    background: #262626;
+    font-weight: 300;
+}
+.copyright i{
+    color: #ff004f;
+}
+
+
+/* ---------------------------------responsive----------------------------------------------------- */
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-1, .about-2{
+        flex-basis: 100%;
+    }
+    .about-1{
+        margin-bottom: 30px;
+    }
+    .about-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+}

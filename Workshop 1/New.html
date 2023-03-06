@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check</title>
+    <style>
+        body{
+            margin:50px 0px;
+            padding:0px;
+            align:center;
+            background-color:antiquewhite;
+            
+        }
+        .container{
+            border-radius: 18px;
+            margin: auto;
+            width: 30%;
+            margin-left: 255;
+            background-color:burlywood;
+        }
+        .form{
+            padding: 10px;
+        }
+        .butt{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            margin-left: 40%;
+        }
+        #drop{
+            /* padding: 15px 32px; */
+            text-decoration: none;
+            height: 25px;
+            width: 100%;
+            font-size: 100%;
+            border-color: black;
+            border-radius: 8px;
+        }
+        .text{
+            width: 100%;
+            height: 20px;
+            border-radius: 8px;
+            border-color: black;
+        }
+        h1{
+            color: burlywood;
+            text-align: center;
+        }
+        .butt:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>IDK WHAT TO WRITE HERE</h1>
+    <div class="container">
+        <form class="form">
+            <label for="name"><h3>Name: </h3><input type="text" class="text" placeholder="Enter your Name"></label>
+            <label for="Email"><h3>Email</h3></label><input type="text" class="text" placeholder="Enter your Emali"></lable>
+            <label for="age"><h3>Age</h3><input type="text" class="text" placeholder="Enter your Age"></label>
+            <label for="occupation"><h3>Which option best describes you</h3></label>
+            <label for="occupation">
+                <select name="occupation" id="drop">
+                    <option value="Student">Student</option>
+                    <option value="Student">Teacher</option>
+                    <option value="Student">Officer</option>
+                </select>
+            </label>
+            <label for="recommendation">
+                <h3>Would you reccomend Herald College Kathmandu to a friend?</h3>
+                <input type="radio" class="reccomend">Yes<br>
+                <input type="radio" class="reccomend">No <br>
+                <input type="radio" class="reccomend">Maybe <br>
+            </label>
+            <label>
+                <h3>Languages and Frameworks known(Check all that apply)</h3>
+                <input type="checkbox">C <br> 
+                <input type="checkbox">C++ <br>
+                <input type="checkbox">C# <br>
+                <input type="checkbox">Java <br>
+                <input type="checkbox">Python <br>
+                <input type="checkbox">JavaScript <br>
+                <input type="checkbox">React <br>
+                <input type="checkbox">Angular <br>
+                <input type="checkbox">Django <br> 
+                <input type="checkbox">Spring <br>
+            </label>
+            <label>
+                <h3>Any comments or suggestions</h3>
+                <textarea name="Comments" id="comments" cols="60" rows="10"></textarea>
+            </label><br>
+            <input type="submit" class="butt">
+        </form>
+    </div>
+</body>
+</html>
