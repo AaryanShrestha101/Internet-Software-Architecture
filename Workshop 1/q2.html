@@ -1,56 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>2</title>
-    <link rel="stylesheet" href="q2.css">
-    <script src="https://kit.fontawesome.com/aef475e859.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    <div class="container">
-        <div class="top_bar">
-            <div class="left-side">
-                <img src="logo.png" alt="dk" class="logo">
-            </div>
-            <div class="right-side">
-                <a href="#home" class="link">Home</a>
-                <a href="#about" class="link">About</a>
-                <a href="#services" class="link">Services</a>
-                <a href="#contact" class="link">Contact</a>
-                <input type="text" placeholder="Search.." class="search"> 
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Aaryan Shrestha
+        </title>
+        <link rel="stylesheet" href="q2.css">
+        <script src="https://kit.fontawesome.com/aef475e859.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>
+                        Student
+                    </p>
+                    <h1>Hi, I'm <span>Aaryan Shrestha</span> <br>From Nepal</h1>
+                </div>
             </div>
         </div>
-        <center>
-        <header><h1 class="heading">Workshop 1</h1></header>
-        <p>This is the paragraph needed in the assignment with<span> THE REQUIRED SPAN TAG</span></p>
-        <button type="submit" class="butt" value="Click me if you dare!!">CLICK ME!!!</button>
-        </center>
-        
-        <div class="contact_me">
-            <div class="side1">
-                <h1>Contact ME !!!!</h1><br>
-                <i class="fa-regular fa-envelope"></i> <p>aaryanshrestha007@gmail.com</p>
-                <a href="" class="sociallink"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="" class="sociallink"><i class="fa-brands fa-instagram"></i></a>
-                <a href="" class="sociallink"><i class="fa-brands fa-twitter"></i></a>
+        <!-- ------------------about-------------------- -->
+        <div id = "about">
+            <div class = "row">
+                <div class = "about-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class ="about-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi! I am Aaryan Shrestha a student at Herald College Kathmandu. I feel estatic to be a part of this great College with the great firends, helpful and loving teacher. My talents lie in programming languages such as HTML, CSS, JavaScript, Python, Java, etc.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skils')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><Span>UI/UX</Span><br>Designing Web/app interfaces</li>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                            <li><span>App Development</span><br>Building Andriod/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><Span></Span><br>No Current or Prior Experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><Span>2018</Span><br>SEE from Gems</li>
+                            <li><span>2019-2021</span><br>+2 Degree from Uniglobe SS/ College</li>
+                            <li><span>2022-current</span><br>Bachelors of Science in Computer Science From Herald College</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <form class="side2">
-                <h3 class="con">Name :</h3>
-                <input type="text" value="Enter your name" class="text"><br>
-                <h3 class="con">E-mail :</h3>
-                <input type="text" value="Enter your email" class="text"><br>
-                <h3 class="con">Message :</h3>
-                <textarea name="contact" id="txtarea" rows="10">Enter the message you want to send me </textarea><br>
-                <input type="submit" class="send">
-            </form>           
+        </div>
+        <div class="curve"></div>
+        <!-- ------------------services-------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
             </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Aaryan. Made with<i class="fa-solid fa-heart"></i> by Aaryan Shrestha</p>
-    </div>
-</body>
+        </div>
+
+        <!-- ------------------portfolio-------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                 <h1 class="sub-title">My Work</h1>
+                 <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The ap wiht the app in the app.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The ap wiht the app in the app.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The ap wiht the app in the app.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                 </div>
+                 <a href="#" class="butt">See more</a>
+            </div>
+        </div>
+        <!-- ------------------Contact-------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>aaryanshrestha007@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/aaryan.shrestha.184"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.instagram.com/aaryan__shrestha___/"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://twitter.com/AcezMan"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aaryan-shrestha-1820aa235/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/CV.pdf" download class="butt butt2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your E-mail" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="butt butt2">submit</button>
+                        </form>
+                        <span id="msg">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Aaryan. Made with<i class="fa-solid fa-heart"></i> by Aaryan Shrestha</p>
+            </div>
+        </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        // ----------------------sidebar----------------------
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        // --------------------------FORM------------------------
+    //     const scriptURL = 'https://script.google.com/macros/s/AKfycbw6SSkhJ5ew_mlB_G8r7WHVT0nohDuNR6Kj23xBZ08s6AYltSaDW9otL7w73-UPm97xBQ/exec'
+    //     const form = document.forms['submit-to-google-sheet']
+    //     const msg , document.getElementById("msg")
+
+    //     form.addEventListener('submit', e => {
+    //         e.preventDefault()
+    //     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    //     .then(response => {
+    //         msg.innerHTML = "Message Sent succesfully"
+    //         setTimeout(function(){
+    //             msg.innerHTML = ""
+    //         },5000)
+    //         form.reset()
+    //     }
+    //     .catch(error = console.error('Error!', error.message))
+    //     })
+    // </script>
+    </body>
 </html>
