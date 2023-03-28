@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Get Fruit</title> 
+  </head> 
+  <body> 
+    <h1>Get Fruit</h1> 
+    <form id="fruitForm"> 
+      <label for="fruitName">What fruit do you want to get?</label> 
+      <input type="text" id="fruitName" name="fruitName"> 
+      <button type="submit">Get Fruit</button> 
+    </form> 
+    <div id="result"></div> 
+    <script> 
+      function getFruit(fruitName) { 
+        return new Promise((resolve, reject) => { 
+          setTimeout(() => { 
+            if (fruitName === "watermelon") { 
+              reject("Sorry, we're out of watermelons"); 
+            } else { 
+              resolve("Here is your "+fruitName); 
+            } 
+          }, fruitName === "watermelon" ? 2000 : 1000); 
+        }); 
+      } 
+ 
+      const fruitForm = document.getElementById("fruitForm"); 
+      const resultDiv = document.getElementById("result"); 
+ 
+      fruitForm.addEventListener("submit", function(event) { 
+        event.preventDefault(); 
+        const fruitName = document.getElementById("fruitName").value; 
+        getFruit(fruitName) 
+          .then(message => { 
+            resultDiv.textContent = message; 
+            resultDiv.style.color = "green"; 
+          }) 
+          .catch(error => { 
+            resultDiv.textContent = error; 
+            resultDiv.style.color = "red"; 
+          }); 
+      }); 
+    </script> 
+  </body> 
+</html>
