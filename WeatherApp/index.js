@@ -8,10 +8,9 @@ search.addEventListener('click', () => {
 
     const APIKey = '0168c6ccf28216393e499c474a3a0ff5';
     const city = document.querySelector('.search-box input').value;
-
     if (city === '')
         return;
-
+    
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
         .then(response => response.json())
         .then(json => {
@@ -63,15 +62,14 @@ search.addEventListener('click', () => {
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+            ren.innerHTML = `${parseInt(json.rainVolume)} mm`;
 
             weatherBox.style.display = '';
             weatherDetails.style.display = '';
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
-            container.style.height = '590px';
-
-
+            container.style.height = '590px';   
+            city.value = "anniston";
         });
-
-
+        search.click();
 });
